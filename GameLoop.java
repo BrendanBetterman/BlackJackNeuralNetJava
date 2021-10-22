@@ -27,6 +27,7 @@ public class GameLoop{
     }
     public String start(){
         inGame = true;
+        this.won = false;
         String output;
         if (Player.empty()){
             for (int i = 0; i<=1; i++){
@@ -62,13 +63,15 @@ public class GameLoop{
         Hand.addCard(output);
         return output;
     }
-    public boolean hit(){
+    public String hit(){
         String temp = this.hit(Player);
+        
         if (hasBusted()){
             this.hold();
-            return false;
+            //return false;
         }
-        return true;
+        return temp;
+        //return true;
     }
     private void houseAI(){
         int handValue = House.getHandValue();

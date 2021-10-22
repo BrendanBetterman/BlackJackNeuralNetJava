@@ -14,7 +14,7 @@ public class NumJa{
         double[][] out = new double[x][y];
         for(int i=0; i<x;i++){
             for(int k=0; k<y;k++){
-                out[i][k] = 0.05 * random.nextDouble() -0.5;
+                out[i][k] =  0.05 * random.nextDouble() -0.5;
             }
             
         }

@@ -1,7 +1,7 @@
 public class Loss{
     //CategoricalCrossentropy
-    double[] outputArray;
-    double outputSample;
+    public double[] outputArray;
+    public double outputSample;
   
 
     public static double loss(double[] in,double target){
